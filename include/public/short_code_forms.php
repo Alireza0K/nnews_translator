@@ -13,11 +13,11 @@ function form2_r()
 
 function form3_r()
 {
-    $page = include INCLUDENEWSTEMPLATE . "public\oforms\classic_for3.php" ;
-} 
+    $page = include INCLUDENEWSTEMPLATE . "public\oforms\classic_form3.php" ;
+}
 
 
-// creat short code
+// create short code
 add_shortcode( "form1" , "form1_r" );
 add_shortcode( "form2" , "form2_r" );
 add_shortcode( "form3" , "form3_r" );
