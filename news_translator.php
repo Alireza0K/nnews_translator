@@ -19,7 +19,7 @@ define("INCLUDENEWSTEMPLATE",plugin_dir_path(__FILE__)."template/");
 if(is_admin()){
     include INCLUDENEWSPATH ."admin/show_menu_page.php";
     include INCLUDENEWSPATH . "public/short_code_forms.php";
-    include INCLUDENEWSPATH . "admin/metabox.php";
+    include INCLUDENEWSPATH . "admin/metaboxs.php";
 }else{
     include INCLUDENEWSPATH . "public/filter_word.php";
     
