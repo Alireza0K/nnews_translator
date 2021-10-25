@@ -1,15 +1,34 @@
 <?php
 add_action( 'admin_menu', 'show_in_menu' );
+add_action("admin_menu","first_submenu");
 function show_in_menu() {
     add_menu_page(
-        "news translator", //name
-        "news translator", //title
+        "ترجمه کننده", //name
+        "ترجمه کننده", //title
         "manage_options", //unic
         "nnews_menu", //Slug
         "main_menu", //import file
         INCLUDENEWSURL . "image/translation.png",
     );
 }
+function first_submenu()
+{
+    add_submenu_page( 
+        "nnews_menu", 
+        "فیلتر کردن کلمات", 
+        "فیلتر کردن کلمات", 
+        "manage_options", 
+        "word-filtering", 
+        "first_slug_in_menu", 
+    );
+}
+
+
+function first_slug_in_menu()
+{
+    
+}
+
 function main_menu()
 {
     if (isset($_POST["post_form"])) {
