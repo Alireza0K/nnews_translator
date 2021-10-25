@@ -1,4 +1,6 @@
 <?php
+
+// for get code for translate 
 function translate_code_handler()
 {
 
