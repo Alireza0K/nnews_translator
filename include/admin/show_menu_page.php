@@ -26,7 +26,7 @@ function first_submenu()
 
 function first_slug_in_menu()
 {
-    
+    include INCLUDENEWSTEMPLATE . "admin/menu/first_submenu.php" ;
 }
 
 function main_menu()
