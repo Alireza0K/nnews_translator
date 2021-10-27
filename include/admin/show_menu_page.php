@@ -26,6 +26,17 @@ function first_submenu()
 
 function first_slug_in_menu()
 {
+    if (empty($_POST["add_word"])) {
+        include INCLUDENEWSFORMS . "js/alert_empty_addword.php" ;
+    }else{
+        update_option( "Place_Word", $_POST["add_word"] );
+    }
+    if (empty($_POST["replace"])) {
+        include INCLUDENEWSFORMS . "js/alert_empty_replace.php" ;
+    }else{
+        update_option( "Replace", $_POST["replace"] );
+    }
+
     include INCLUDENEWSTEMPLATE . "admin/menu/first_submenu.php" ;
 }
 
