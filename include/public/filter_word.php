@@ -2,14 +2,10 @@
 
 function word_filtering($content)
 {
-    $changings = [
-        '0'  => ["Hello","luck","good"],
-        '1' => ["(._.)","WOW","<._.>"]
-    ];
-
-    foreach ($changings as $change){
-        $content = preg_replace("/{$change[0]}/", $change[1], $content);
-    } 
+    $replace = get_option("Replace");
+    $new_word = get_option("Place_Word");
+    
+    $content = preg_replace("/{$replace}/", $new_word, $content); 
     return $content;
 }
 function filter_title($title)
