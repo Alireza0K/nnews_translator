@@ -3,17 +3,17 @@
 // import the form 
 function form1_r()
 {
-    $page = include INCLUDENEWSTEMPLATE . "public\oforms\classic_form.php" ;
+    $page = include INCLUDENEWSTEMPLATE . "public/oforms/classic_form.php" ;
 }
 
 function form2_r()
 {
-    $page = include INCLUDENEWSTEMPLATE . "public\oforms\classic_form2.php" ;
+    $page = include INCLUDENEWSTEMPLATE . "public/oforms/classic_form2.php" ;
 }
 
 function form3_r()
 {
-    $page = include INCLUDENEWSTEMPLATE . "public\oforms\classic_form3.php" ;
+    $page = include INCLUDENEWSTEMPLATE . "public/oforms/classic_form3.php" ;
 }
 
 

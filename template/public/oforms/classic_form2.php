@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box}
@@ -71,9 +69,7 @@ button:hover {
   }
 }
 </style>
-<body>
-
-<form action="/action_page.php" style="border:1px solid #ccc">
+<form  style="border:1px solid #ccc">
   <div class="container">
     <h1>Sign Up</h1>
     <p>Please fill in this form to create an account.</p>
@@ -100,6 +96,3 @@ button:hover {
     </div>
   </div>
 </form>
-
-</body>
-</html>
