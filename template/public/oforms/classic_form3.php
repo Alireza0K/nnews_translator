@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-}
 
 * {
   box-sizing: border-box;
@@ -66,10 +58,9 @@ a {
   text-align: center;
 }
 </style>
-</head>
 <body>
 
-<form action="/action_page.php">
+<form >
   <div class="container">
     <h1>Register</h1>
     <p>Please fill in this form to create an account.</p>
@@ -94,5 +85,4 @@ a {
   </div>
 </form>
 
-</body>
-</html>
+

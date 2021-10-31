@@ -12,7 +12,7 @@
 // import url dir path and dir path 
 define("INCLUDENEWSPATH",plugin_dir_path(__FILE__)."include/");
 define("INCLUDENEWSURL",plugin_dir_url(__FILE__)."assets/");
-define("INCLUDENEWSFORMS",plugin_dir_path(__FILE__)."assets/");
+define("INCLUDENEWSASSETS",plugin_dir_path(__FILE__)."assets/");
 define("INCLUDENEWSTEMPLATE",plugin_dir_path(__FILE__)."template/");
 
 // if not in public page dosent show and if in public page show . 
