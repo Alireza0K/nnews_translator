@@ -3,11 +3,16 @@
 </div>
 <div class="WRAP">
     <h1>دوبله کردن این صفحه</h1>
-    <form action="" method="post">
+    <form method="post">
         
-        <label for="youre_name">
+        <label for="url_site" style="margin-top:10px">
             لینک سایت رو وارد کنید :
-            <input type="text" name="youre_site" id="youre_name">
+            <input type="text" name="url_site" id="url_site">
+        </label>
+        <br>
+        <label for="site_name" style="margin-top:10px">
+            اسم سایت را وارد کنید :
+            <input type="text" name="site_name" id="site_name">
         </label>
         <br>
         <label for="Dubbing_this_page">  
@@ -17,7 +22,7 @@
             >
         </label>  
         <br>
-        <button name="post_form" type="submit">فرستادن</button>
+        <button name="post_form" type="submit" style="margin-top:10px">فرستادن</button>
     </form>
     <div class="WRAP">
         <h1><?php  echo $Posting_Site_List ?></h1>
