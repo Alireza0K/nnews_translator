@@ -22,4 +22,22 @@
     <div class="WRAP">
         <h1><?php  echo $Posting_Site_List ?></h1>
     </div>
+    <table class="widefat">
+        <thead>
+            <tr>
+                <th>شناسه وبسایت</th>
+                <th>نام وبسایت</th>
+                <th>آدرس وبسایت</th>
+            </tr>
+        </thead>
+        <tbody>
+                <?php foreach($get_site_list as $site_list_ll): ?>
+                    <tr>
+                    <td><?php echo $site_list_ll->id ?></td>
+                    <td><?php echo $site_list_ll->name_site ?></td>
+                    <td><?php echo $site_list_ll->url ?></td>
+                    </tr>
+                <?php endforeach; ?>
+        </tbody>
+    </table>
 </div>
