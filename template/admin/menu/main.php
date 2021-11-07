@@ -28,6 +28,7 @@
                 <th>شناسه وبسایت</th>
                 <th>نام وبسایت</th>
                 <th>آدرس وبسایت</th>
+                <th>عملیات ها</th>
             </tr>
         </thead>
         <tbody>
@@ -36,6 +37,9 @@
                     <td><?php echo $site_list_ll->id ?></td>
                     <td><?php echo $site_list_ll->name_site ?></td>
                     <td><?php echo $site_list_ll->url ?></td>
+                    <td>
+                        <a href="<?php echo add_query_arg(['action'=>'delete' , 'item'=>$site_list_ll->id]) ; ?>">حذف</a>
+                    </td>
                     </tr>
                 <?php endforeach; ?>
         </tbody>
