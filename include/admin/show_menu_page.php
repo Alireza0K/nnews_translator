@@ -58,7 +58,13 @@ function main_menu()
             $wpdb->delete($wpdb->prefix."site_list",["id"=>$item]);
         }
     }
-
+    if (isset($_POST["post_form"])){
+        $wpdb->insert($wpdb->prefix."site_list",[
+            "name_site" => $_POST["site_name"],
+            "url" => $_POST["url_site"],
+        ]);
+    }
+    
     $get_site_list = $wpdb->get_results("select * from {$wpdb->prefix}site_list");
 
     
