@@ -1,5 +1,5 @@
 <body>
-    <form action="post">
+    <form class="WPRAP" action="post">
         <label for="index_word">
             کلمه ورودی : 
             <input type="text" id="index_word" name="index_word"

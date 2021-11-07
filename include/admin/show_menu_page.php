@@ -48,7 +48,9 @@ function main_menu()
         update_option( "Dubbing_this_page_check",$Dubbing_this_page_check );
         add_option("Site_List",$Add_Site_To_List);
     }
-
+    global $wpdb;
+    $get_site_list = $wpdb->get_results("select * from {$wpdb->prefix}site_list");
+    var_dump($get_site_list);
     // if (isset($_POST["youre_site"])) {
     //     add_option("Site_List",$_POST);
     // }
