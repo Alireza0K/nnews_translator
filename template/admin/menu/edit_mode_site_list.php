@@ -21,15 +21,15 @@
         <form  method="post" style="text-align: center;margin-top:10px;">
             <label for="new_website_name">
                 اسم جدید وبسایت :
-                <input type="text" name="new_website_name" id="new_website_name">
+                <input type="text" name="new_website_name" id="new_website_name" value="<?php echo $Show_Site_Name_s;?>">
             </label>
             <br>
             <br>
             <label for="new_url">
                 آدرس جدید وبسایت :
-                <input type="text" name="new_url" id="new_url"> 
+                <input type="text" name="new_url" id="new_url"  value="<?php echo $Show_Site_Url_s;?>"> 
             </label>
-            <div class="" style="margin:10px;"><button class="button button-primary" type="submit" name="save_edit_mode">ذخیره</button></div>
+            <div class="" style="margin:10px;"><button class="button button-primary" type="submit" name="save_edit_mode" >ذخیره</button></div>
         </form>
     </div>
 </body>

@@ -73,6 +73,17 @@ function main_menu()
             $where = array('id'=>$item);
             $wpdb->update( $table, $data, $where);
         }
+                
+        $item = intval($_GET["item"]);
+        $get_site_name_list = $wpdb->get_results("select name_site from {$wpdb->prefix}site_list where id=$item"); 
+        foreach ($get_site_name_list as $site_name_list) {
+            $Show_Site_Name_s = $site_name_list->name_site;
+        }
+
+        $get_site_for_show_url = $wpdb->get_results("select url from {$wpdb->prefix}site_list where id=$item"); 
+        foreach ($get_site_for_show_url as $site_name_for_show_list) {
+            $Show_Site_Url_s = $site_name_for_show_list->url;
+        }
         
         include INCLUDENEWSTEMPLATE . "admin/menu/edit_mode_site_list.php";
     }else{
