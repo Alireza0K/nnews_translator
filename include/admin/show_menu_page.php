@@ -64,13 +64,23 @@ function main_menu()
             "url" => $_POST["url_site"],
         ]);
     }
-    
-    $get_site_list = $wpdb->get_results("select * from {$wpdb->prefix}site_list");
+    if ($action == "change_to_edit_mode") {
+        if (isset($_POST["save_edit_mode"])) {
+            $item = intval($_GET["item"]);
+            $table = $wpdb->prefix."site_list";
+            $data = array('name_site'=>$_POST["new_website_name"],"url"=>$_POST["new_url"]);
+            $where = array('id'=>$item);
+            $wpdb->update( $table, $data, $where);
+        }
+        include INCLUDENEWSTEMPLATE . "admin/menu/edit_mode_site_list.php";
+    }else{
+        $get_site_list = $wpdb->get_results("select * from {$wpdb->prefix}site_list");
 
     
-    $Posting_Site_List = get_option("Site_List");
-    $Posting_History = get_option("Dubbing_this_page_check");
-
-    // import page 
-    include INCLUDENEWSTEMPLATE . "admin/menu/main.php";
+        $Posting_Site_List = get_option("Site_List");
+        $Posting_History = get_option("Dubbing_this_page_check");
+    
+        // import page 
+        include INCLUDENEWSTEMPLATE . "admin/menu/main.php";
+    }
 }

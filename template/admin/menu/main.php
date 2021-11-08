@@ -43,7 +43,9 @@
                     <td><?php echo $site_list_ll->name_site ?></td>
                     <td><?php echo $site_list_ll->url ?></td>
                     <td>
-                        <a href="<?php echo add_query_arg(['action'=>'delete' , 'item'=>$site_list_ll->id]) ; ?>">حذف</a>
+                        <a href="<?php echo add_query_arg(['action'=>'delete' , 'item'=>$site_list_ll->id]) ; ?>"> حذف</a>
+                        |
+                        <a href="<?php echo add_query_arg(['action'=>'change_to_edit_mode', 'item'=>$site_list_ll->id]) ; ?>">تعقیر</a>
                     </td>
                     </tr>
                 <?php endforeach; ?>
