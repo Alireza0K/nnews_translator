@@ -32,7 +32,7 @@
                 <?php echo "value=" . get_option("Replace"); ?>
                 > 
             </label>
-            <div class="" style="margin:10px;"><button type="submit">ذخیره</button></div>
+            <div class="" style="margin:10px;"><button class="button button-primary" type="submit">ذخیره</button></div>
         </form>
     </div>
 </body>

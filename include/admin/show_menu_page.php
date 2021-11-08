@@ -65,6 +65,7 @@ function main_menu()
         ]);
     }
     if ($action == "change_to_edit_mode") {
+
         if (isset($_POST["save_edit_mode"])) {
             $item = intval($_GET["item"]);
             $table = $wpdb->prefix."site_list";
@@ -72,6 +73,7 @@ function main_menu()
             $where = array('id'=>$item);
             $wpdb->update( $table, $data, $where);
         }
+        
         include INCLUDENEWSTEMPLATE . "admin/menu/edit_mode_site_list.php";
     }else{
         $get_site_list = $wpdb->get_results("select * from {$wpdb->prefix}site_list");

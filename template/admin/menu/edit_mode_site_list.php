@@ -29,7 +29,7 @@
                 آدرس جدید وبسایت :
                 <input type="text" name="new_url" id="new_url"> 
             </label>
-            <div class="" style="margin:10px;"><button type="submit" name="save_edit_mode">ذخیره</button></div>
+            <div class="" style="margin:10px;"><button class="button button-primary" type="submit" name="save_edit_mode">ذخیره</button></div>
         </form>
     </div>
 </body>
