@@ -34,14 +34,3 @@
     </div>
 </body>
 </html>
-<?php
-
-// if (isset($__POST["save_edit_mode"])) {
-//     $item = intval($_GET["item"]);
-//     $wpdb->update($wpdb->prefix."site_list",[
-//         "name_site"=>$_POST["new_website_name"],
-//         "url"=> $_POST["new_url"],
-//         $item
-//     ]);
-//     var_dump($item);
-// }
