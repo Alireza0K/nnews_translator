@@ -27,12 +27,12 @@ function first_submenu()
 function first_slug_in_menu()
 {
     if (empty($_POST["add_word"])) {
-        include INCLUDENEWSASSETS . "js/alert_empty_addword.php" ;
+        wp_enqueue_script("empty_word_alert");
     }else{
         update_option( "Place_Word", $_POST["add_word"] );
     }
     if (empty($_POST["replace"])) {
-        include INCLUDENEWSASSETS . "js/alert_empty_replace.php" ;
+        wp_enqueue_script("empty_index_alert");
     }else{
         update_option( "Replace", $_POST["replace"] );
     }
