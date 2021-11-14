@@ -2,6 +2,7 @@
 
 function register_script()
 {
+    // java script files
     wp_register_script("empty_word_alert", INCLUDENEWSURL."js/alert_empty_addword.js");
     wp_register_script("empty_index_alert", INCLUDENEWSURL."js/alert_empty_replace.js");
 }

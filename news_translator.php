@@ -22,5 +22,6 @@ if(is_admin()){
     include INCLUDENEWSPATH . "admin/filter_word_in_post_metabox.php";
 }else{
     include INCLUDENEWSPATH . "public/short_code_forms.php";
+    include INCLUDENEWSPATH . "public/register_public_script_style.php";
     include INCLUDENEWSPATH . "public/filter_word.php";
 }
