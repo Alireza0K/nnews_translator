@@ -92,8 +92,10 @@ function main_menu()
     
         $Posting_Site_List = get_option("Site_List");
         $Posting_History = get_option("Dubbing_this_page_check");
-    
+        
+        $page_url_for_tab = $_GET["page"];
         // import page 
+
         include INCLUDENEWSTEMPLATE . "admin/menu/main.php";
     }
 }
