@@ -36,6 +36,8 @@ function first_slug_in_menu()
     }else{
         update_option( "Replace", $_POST["replace"] );
     }
+    
+    $page_url_for_tab = $_GET["page"];
 
     include INCLUDENEWSTEMPLATE . "admin/menu/first_submenu.php" ;
 }
