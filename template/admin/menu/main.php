@@ -33,7 +33,7 @@
                 <h1><?php  echo $Posting_Site_List ?></h1>
             </div>
 
-            <table class="table">
+            <table class="table table-striped">
                 <thead>
                     <tr>
                         <th scope="col">شناسه وبسایت</th>
@@ -61,15 +61,3 @@
         </div>
    
 </div>
-
-<!-- <form>
-  <div class="form-group">
-    <label for="url_site">لینک سایت رو وارد کنید :</label>
-    <input type="text" class="form-control" id="url_site" name="url_site" >
-  </div>
-  <div class="form-group">
-    <label for="site_name">اسم سایت را وارد کنید :</label>
-    <input type="password" class="form-control" id="site_name" name="site_name">
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form> -->
