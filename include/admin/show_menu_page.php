@@ -26,17 +26,20 @@ function first_submenu()
 
 function first_slug_in_menu()
 {
-    if (empty($_POST["add_word"])) {
-        wp_enqueue_script("empty_word_alert");
-    }else{
+    $Get_Replace_value = get_option("Replace");
+    $Get_Add_Word_value = get_option("Place_Word");
+
+    if (!empty($_POST["add_word"])){
         update_option( "Place_Word", $_POST["add_word"] );
+    }elseif(empty($Get_Add_Word_value)){
+        wp_enqueue_script("empty_word_alert");
     }
-    if (empty($_POST["replace"])) {
+    if (!empty($_POST["replace"])) {
+        update_option("Replace",$_POST["replace"]);
+    }elseif (empty($Get_Replace_value)){
         wp_enqueue_script("empty_index_alert");
-    }else{
-        update_option( "Replace", $_POST["replace"] );
     }
-    
+
     $page_url_for_tab = $_GET["page"];
 
     include INCLUDENEWSTEMPLATE . "admin/menu/first_submenu.php" ;
