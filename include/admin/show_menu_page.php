@@ -94,6 +94,7 @@ function main_menu()
         $Posting_History = get_option("Dubbing_this_page_check");
     
         // import page 
+        
         include INCLUDENEWSTEMPLATE . "admin/menu/main.php";
     }
 }

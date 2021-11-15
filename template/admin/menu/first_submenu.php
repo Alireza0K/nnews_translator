@@ -1,3 +1,7 @@
+<nav class="nav-tab-wrapper">
+  <a href="?page=nnews_menu" class="nav-tab nav-tab-active">مدیریت مترجم</a>
+  <a href="?page=word-filtering" class="nav-tab">مدیریت فیلتر ها</a>
+</nav>
 <!DOCTYPE html>
 <html lang="en">
 <head>
