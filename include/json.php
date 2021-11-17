@@ -1,7 +1,7 @@
 <?php
 
-add_action("wp_ajax_live_search","live_search_proces");
-function live_search_proces()
+add_action("wp_ajax_live_search","live_search_process");
+function live_search_process()
 {
     // array for keep data
     $find_site_name = [];
