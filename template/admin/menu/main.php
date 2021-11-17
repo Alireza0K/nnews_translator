@@ -61,10 +61,10 @@ wp_enqueue_style("search_box_style")
                         <?php endforeach; ?>
                 </tbody>
             </table>
-        </div>
+        </div><h1>جستجو</h1>
         <div class="main-search-input-wrap">
-     <div class="main-search-input fl-wrap">
-         <div class="main-search-input-item"> <input type="text" value="" placeholder="Search Products..."> </div> <button class="main-search-button">Search</button>
+            <div class="main-search-input fl-wrap">
+            <div class="main-search-input-item"> <input type="text" value="google" id="search_box_value" placeholder="Search Products..."> </div> <button id="send_search" class="main-search-button">Search</button>
      </div>
  </div>
 </div>
