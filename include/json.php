@@ -12,9 +12,17 @@ function live_search_proces()
     // get data from database
     global $wpdb;
     $get_dataform_database = $wpdb->get_results("select * from {$wpdb->prefix}site_list");
+    $site_id_for_send_json = $wpdb->get_results("select id from {$wpdb->prefix}site_list WHERE name_site='{$get_search}'");
+    $site_ur_for_send_json = $wpdb->get_results("select url from {$wpdb->prefix}site_list WHERE name_site='{$get_search}'");
     foreach($get_dataform_database as $site_name_list){
         $name = $site_name_list->name_site;
         array_push($find_site_name, $name);
+    }
+    foreach($site_id_for_send_json as $site_id){
+        $id = $site_id->id;
+    }
+    foreach($site_ur_for_send_json as $site_url){
+        $url = $site_url->url;
     }
     
     // find search results
@@ -33,6 +41,8 @@ function live_search_proces()
         "success" => true, 
         "search_list" => $find_site_name,
         "result" => $result,
-        "massage"=> $massage
+        "site_id" =>$id,
+        "site_url" => $url,
+        "massage"=> $massage,
     ]);
 }
