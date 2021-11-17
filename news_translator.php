@@ -45,7 +45,7 @@ if(is_admin()){
     include INCLUDENEWSPATH . "admin/show_menu_page.php";
     include INCLUDENEWSPATH . "admin/register_admin_script_style.php";
     include INCLUDENEWSPATH . "admin/filter_word_in_post_metabox.php";
-    include INCLUDENEWSPATH . "json_loader.php";
+    include INCLUDENEWSPATH . "json.php";
 }else{
     include INCLUDENEWSPATH . "public/short_code_forms.php";
     include INCLUDENEWSPATH . "public/register_public_script_style.php";
