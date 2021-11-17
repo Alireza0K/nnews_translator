@@ -10,11 +10,6 @@ jQuery(document).ready(function($) {
                 data_value:$("#search_box_value").val()
             },
             success:function(response){
-                console.log(response.search_list)
-                console.log(response.result)
-                console.log(response.site_id)
-                console.log(response.site_url)
-                console.log(response.massage)
                 $("#site_id_load").append(response.site_id)
                 $("#site_name").append(response.result)
                 $("#site_url").append(response.site_url)
