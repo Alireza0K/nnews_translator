@@ -1,17 +1,17 @@
 <?php
 add_action( 'admin_menu', 'show_in_menu' );
-add_action("admin_menu","first_submenu");
+add_action("admin_menu","first_submenu_t");
 function show_in_menu() {
     add_menu_page(
         "ترجمه کننده", //name
         "ترجمه کننده", //title
         "manage_options", //unic
         "nnews_menu", //Slug
-        "main_menu", //import file
+        "main_menu_t", //import file
         INCLUDENEWSURL . "image/translation.png",
     );
 }
-function first_submenu()
+function first_submenu_t()
 {
     add_submenu_page( 
         "nnews_menu", 
@@ -45,7 +45,7 @@ function first_slug_in_menu()
     include INCLUDENEWSTEMPLATE . "admin/menu/first_submenu.php" ;
 }
 
-function main_menu()
+function main_menu_t()
 {
     global $wpdb;
 
